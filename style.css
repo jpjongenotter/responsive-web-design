@@ -1,18 +1,32 @@
 body {
-  background-color: lightgrey;
+  font-size: 1.125rem;
+  color: #707070;
+  margin: 0;
 }
 
+/* Typography */
 h1 {
   font-size: 3rem;
+  color: #212614;
 }
 
 h2 {
-  font-size: 1.5 rem;
+  font-size: 1.5rem;
+}
+
+p span {
+  color: #b7832f;
+}
+
+/* Layout */
+
+img {
+  max-width: 100%;
 }
 
 .albums {
   display: flex;
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .albumcard {
@@ -22,37 +36,27 @@ h2 {
 
 .albumcover {
   max-width: 300px;
+  width: 300px;
 }
 
 .albumtext {
   margin-top: 0px;
-  text-align: left;
 }
 
 #main {
-  text-align: center;
   width: 95%;
   max-width: 980px;
-}
-
-#header {
-  background-color: rgb(99, 124, 109);
-  color: lightgrey;
-  border: 3px solid magenta;
+  margin: 0 auto;
 }
 
 #img-div {
-  align-items: center;
-  justify-content: center;
-  margin: 60px 20px 20px 20px;
-  border: 3px solid magenta;
-}
-
-#image {
-  max-width: 100%;
-  height: auto;
+  margin: 40px 20px 20px 20px;
 }
 
 #img-caption {
   font-size: 0.75rem;
+}
+
+.test {
+  border: 2px solid magenta;
 }
