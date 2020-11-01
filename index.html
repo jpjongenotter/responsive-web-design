@@ -20,42 +20,51 @@
       </header>
       <form id="survey-form">
           <div class="form-group">
-            <label id="name-label" for="name">Name: </label><br>
-            <input type="text" id="name" placeholder="Your name" required><br>
+            <label id="name-label" for="name">Name</label>
+            <input type="text" id="name" class="form-control" placeholder="Your name" required>
           </div>
 
           <div class="form-group">
-            <label id="email-label" for="email">Email: </label><br>
-            <input type="email" id="email" placeholder="Your email address" required><br>
+            <label id="email-label" for="email">Email</label>
+            <input type="email" id="email" class="form-control" placeholder="Your email address" required>
           </div>
 
           <div class="form-group">
-            <label id="number-label" for="number">Number of races watched: </label><br>
-            <input type="number" id="number" min=0 max=15 placeholder="Number of races" required><br>
+            <label id="number-label" for="number">Number of races watched</label>
+            <input type="number" id="number" class="form-control" min=0 max=15 placeholder="Number of races" required>
           </div>
 
           <div class="form-group">
-            <label for="dropdown">Favourite driver: </label><br>
-            <select id="dropdown" name="dropdown"><br>
+            <label for="dropdown">Favourite driver</label>
+            <select id="dropdown" class="form-control" name="dropdown">
               <option value="lewis">Lewis Hamilton</option> 
               <option value="valteri">Valteri Bottas</option> 
-              <option value="max">Max Verstappen</option> 
+              <option value="max" selected>Max Verstappen</option> 
             </select>
           </div>
 
           <div class="form-group">
               <p>Do you have a driver's license?</p>
               <label for="license">
-                <input name="license" value="no" type="radio">No
                 <input name="license" value="yes" type="radio">Yes
-            </label>
+              </label>
+              <label for="license">
+                <input name="license" value="no" type="radio">No
+              </label>
+          </div>
 
             <div class="form-group">
-              <p>Did you ever spend money on Formula One</p>
+              <p>Did you ever spend money on Formula One?</p>
               <label for="spend">
                 <input name="spend" value="never" type="checkbox">Never
-                <input name="spend" value="merchandise" type="checkbox">Merchandise
+              </label>
+              <label for="spend">
+                  <input name="spend" value="merchandise" type="checkbox">Merchandise
+              </label>
+              <label for="spend">
                 <input name="spend" value="training" type="checkbox">Training
+              </label>
+              <label for="spend">
                 <input name="spend" value="race" type="checkbox">Race
             </label>
           </div>
@@ -65,7 +74,8 @@
               Do you have any additional remarks?
             </p>
             <textarea name="message" placeholder="Enter any additional remarks.">
-            </textarea>     
+
+            </textarea>
           </div>
 
           <div class="form-group">
