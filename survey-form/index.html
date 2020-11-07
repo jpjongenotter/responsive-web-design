@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formula One Survey Form</title>
+    <meta
+      name="description"
+      content="Formula One Survey Form created for freeCodeCamp Responsive Web Design Project"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">
+          Formula One Survey
+        </h1>
+        <p id="description">
+          Thank you for answering some questions on this Formula One season
+        </p>
+      </header>
+      <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" id="name" class="form-control" placeholder="Your name" required>
+          </div>
+
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" id="email" class="form-control" placeholder="Your email address" required>
+          </div>
+
+          <div class="form-group">
+            <label id="number-label" for="number">Number of races watched</label>
+            <input type="number" id="number" class="form-control" min=0 max=15 placeholder="Number of races" required>
+          </div>
+
+          <div class="form-group">
+            <label for="dropdown">Favourite driver</label>
+            <select id="dropdown" class="form-control" name="dropdown">
+              <option value="lewis">Lewis Hamilton</option> 
+              <option value="valteri">Valteri Bottas</option> 
+              <option value="max" selected>Max Verstappen</option> 
+            </select>
+          </div>
+
+          <div class="form-group">
+              <p>Do you have a driver's license?</p>
+              <label for="license">
+                <input name="license" value="yes" type="radio">Yes
+              </label>
+              <label for="license">
+                <input name="license" value="no" type="radio">No
+              </label>
+          </div>
+
+            <div class="form-group">
+              <p>Did you ever spend money on Formula One?</p>
+              <label for="spend">
+                <input name="spend" value="never" type="checkbox">Never
+              </label>
+              <label for="spend">
+                  <input name="spend" value="merchandise" type="checkbox">Merchandise
+              </label>
+              <label for="spend">
+                <input name="spend" value="training" type="checkbox">Training
+              </label>
+              <label for="spend">
+                <input name="spend" value="race" type="checkbox">Race
+            </label>
+          </div>
+
+          <div class="form-group">
+            <p>
+              Do you have any additional remarks?
+            </p>
+            <textarea name="message" placeholder="Enter any additional remarks.">
+
+            </textarea>
+          </div>
+
+          <div class="form-group">
+            <button id="submit" type="submit">
+              Submit
+            </button>
+          </div>
+
+          </div>
+      </form>
+    </div>
+  </body>
+</html>
