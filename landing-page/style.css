@@ -5,6 +5,10 @@ body {
   margin: 0 0;
 }
 
+h5 {
+  margin-bottom: 0.5rem;
+}
+
 .nav-link {
   text-decoration: none;
   color: black;
@@ -33,4 +37,28 @@ nav ul {
   max-width: 100px;
   object-fit: cover;
   margin: 0 0;
+}
+
+#form {
+  margin-left: 1rem;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 960px;
+  text-align: center;
+}
+
+.product-card {
+  display: flex;
+}
+
+.product-name {
+  font-weight: 700;
+  width: 25%;
+}
+
+.product-description {
+  width: 60%;
 }

@@ -13,13 +13,53 @@
         <img id="header-img" src="https://upload.wikimedia.org/wikipedia/en/9/99/Jones-official-logo-black.jpg" alt="Jones Snowboard logo">
         <nav id="nav-bar">
           <ul>
-            <li><a href="#" class="nav-link">NEWS</a></li>
-            <li><a href="#" class="nav-link">PRODUCTS</a></li>
-            <li><a href="#" class="nav-link">DEALERS</a></li>
+            <li><a href="#video_section" class="nav-link">VIDEO</a></li>
+            <li><a href="#products-section" class="nav-link">PRODUCTS</a></li>
+            <li><a href="#dealers-section" class="nav-link">DEALERS</a></li>
           </ul>
         </nav>
       </header>
-      <div class="container">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <h5>Receive Snow Alert</h5>
+          <input id="email" type="email" name="email" placeholder="jeremy@jones.com">
+          <input id="submit" type="submit" value="Submit">
+        </form>
+        <div class="container">
+          <section id="video_section">
+            <h2>VIDEO</h2>
+            <iframe id="video" width="420px" height="315" src="https://www.youtube.com/embed/LOysjQ5dxvs">
+            </iframe>
+          </section>
+          <section id="products-section">
+            <h2>PRODUCTS</h2>
+            <div class="product-card">
+              <p class="product-name">
+                Flagship
+              </p>
+              <p class="product-description">
+                The board for kicking ass off-piste
+              </p>
+            </div>
+            <div class="product-card">
+              <p class="product-name">
+                Mountain Twin
+              </p>
+              <p class="product-description">
+                The ultimate board if you love the whole mountain
+              </p>
+            </div>
+            <div class="product-card">
+              <p class="product-name">
+                Aviator
+              </p>
+              <p class="product-description">
+                The ultimate board if you want to fly
+              </p>
+            </div>
+          </section>
+          <section id="dealers-section">
+            <h2>DEALERS</h2>
+          </section>
       </div>
   </body>
 </html>
