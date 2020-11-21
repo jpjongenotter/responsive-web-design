@@ -1,0 +1,43 @@
+/*  General layout */
+body {
+  margin 0 0;
+}
+
+/* Header layout */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#header {
+  background-color: lightgray; /* color makes sure scrolling text is does not display through header */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#header-img {
+  max-width: 100px;
+}
+
+nav {
+  width: 50%;
+}
+
+nav ul {
+  display: flex;  
+  list-style: none;
+  justify-content: space-around;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  padding-top: 100px; /* To account for fixed header */
+}
