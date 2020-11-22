@@ -5,6 +5,10 @@ body {
   --container-width: 90%;
 }
 
+html {
+  scroll-padding-top: 150px; /*to make sure refs move to correct position, taking fixed header into account */
+}
+
 h2 {
   text-align: center;
 }
@@ -75,8 +79,6 @@ nav ul {
 }
 
 /* Products section layout */
-#products_section {
-}
 
 .product-card {
   width: 30%;
@@ -85,6 +87,13 @@ nav ul {
 .product-overview {
   display: flex;
   justify-content: space-evenly;
+}
+
+@media (max-width: 600px) {
+  .product-overview {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .product-name {
@@ -102,10 +111,19 @@ nav ul {
   align-items: center;
 }
 
+@media (max-width: 600px) {
+  .dealer-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .dealer-link {
+    margin-bottom: 1.5rem;
+  }
+}
+
 .dealer-name {
   margin: 0 2rem;
   width: 20rem;
-}
-
-.dealer-link {
 }
