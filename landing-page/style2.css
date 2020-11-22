@@ -75,12 +75,37 @@ nav ul {
 }
 
 /* Products section layout */
+#products_section {
+}
+
+.product-card {
+  width: 30%;
+}
+
 .product-overview {
   display: flex;
   justify-content: space-evenly;
 }
 
+.product-name {
+  color: grey;
+  font-size: 2rem;
+}
+
 .product-image {
-  width: 90%;
   max-width: 150px;
+}
+
+/* Dealers section layout */
+.dealer-card {
+  display: flex;
+  align-items: center;
+}
+
+.dealer-name {
+  margin: 0 2rem;
+  width: 20rem;
+}
+
+.dealer-link {
 }
