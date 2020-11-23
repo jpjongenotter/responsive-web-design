@@ -16,6 +16,10 @@ code {
   border: 1px solid black;
 }
 
+img {
+  max-width: 100%;
+}
+
 #navbar {
   margin-left: 5px;
 }
