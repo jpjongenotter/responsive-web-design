@@ -17,16 +17,42 @@ code {
 }
 
 #navbar {
-  width: 300px;
+  margin-left: 5px;
+}
+
+@media (min-width: 800px) {
+  #navbar {
+    width: 300px;
+    position: fixed;
+    width: 25%;
+    height: 100%;
+    overflow: auto;
+  }
+
+  #main-doc {
+    position: absolute;
+    left: 25%;
+  }
 }
 
 nav ul {
   list-style-type: none;
+  border: 1px solid #555;
+  padding: 0;
 }
 
 li a {
   display: block;
   text-decoration: none;
+}
+
+nav li {
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+nav li:last-child {
+  border-bottom: none;
 }
 
 /* Change the link color on hover */
