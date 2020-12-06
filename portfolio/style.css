@@ -1,0 +1,95 @@
+/*  General layout */
+body {
+  margin: 0 0;
+  --header-height: 100px;
+  --container-width: 90%;
+
+  font-family: Arial;
+  text-align: center;
+  background-color: lightgray;
+}
+
+html {
+  scroll-padding-top: 150px; /*to make sure refs move to correct position, taking fixed header into account */
+}
+
+/* Header layout */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#header {
+  background-color: white; /* color makes sure scrolling text is does not display through header */
+  border-bottom: 1px solid black;
+}
+
+.top_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.bottom_header {
+  width: 75%;
+  margin: 0 auto;
+}
+
+nav ul {
+  margin-right: 2rem;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+  font-size: larger;
+}
+
+/* Container layout */
+.container {
+  padding-top: var(--header-height); /* To account for fixed header */
+
+  width: var(container-width);
+  margin: 2rem auto;
+  max-width: 960px;
+}
+
+/* Welcome section layout */
+#welcome_section {
+  text-align: center;
+}
+
+/* Projects section layout */
+
+.project-card {
+  width: 60%;
+}
+
+.product-overview {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 600px) {
+  .product-overview {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.product-name {
+  color: grey;
+  font-size: 2rem;
+}
+
+.project-image {
+  max-width: 400px;
+}
