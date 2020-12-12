@@ -69,27 +69,18 @@ nav ul {
 
 /* Projects section layout */
 
-.project-card {
-  width: 60%;
-}
-
-.product-overview {
-  display: flex;
-  justify-content: space-evenly;
+.project-overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 @media (max-width: 600px) {
-  .product-overview {
-    flex-direction: column;
-    align-items: center;
+  .project-overview {
+    display: inline;
   }
-}
-
-.product-name {
-  color: grey;
-  font-size: 2rem;
 }
 
 .project-image {
   max-width: 400px;
+  border: 1px solid black;
 }
