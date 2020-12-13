@@ -15,27 +15,15 @@ html {
 
 /* Header layout */
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-#header {
+#navbar {
   background-color: white; /* color makes sure scrolling text is does not display through header */
   border-bottom: 1px solid black;
 }
 
-.top_header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 0.5rem;
-}
-
-.bottom_header {
-  width: 75%;
-  margin: 0 auto;
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 nav ul {
@@ -63,8 +51,12 @@ nav ul {
 }
 
 /* Welcome section layout */
-#welcome_section {
+#welcome-section {
   text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Projects section layout */
@@ -74,13 +66,17 @@ nav ul {
   grid-template-columns: 1fr 1fr;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .project-overview {
     display: inline;
   }
 }
 
 .project-image {
-  max-width: 400px;
+  max-width: 350px;
+}
+
+.project-tile {
   border: 1px solid black;
+  margin: 1rem;
 }
